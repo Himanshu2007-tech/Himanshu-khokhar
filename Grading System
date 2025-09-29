@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int v,w,x,y,z,total,totals;
+    int v,w,x,y,z,total,sum;
     printf("Enter Maths Number: ");
     scanf("%d",&v);
     printf("Enter English Number:  ");
@@ -11,23 +11,24 @@ int main(){
     scanf("%d",&y);
      printf("Enter scocial science Number: ");
     scanf("%d",&z);
-    total = v+w+x+y+z;
-    totals = total/5;
-    if(totals >= 90 ){
-        printf("your Grade is A+",v);
+    sum = (x+y+w+v+z);
+    printf("Your total marks: %d/500\n",sum);
+    total = (v+w+x+y+z)/5;
+    if(total >= 90 ){
+        printf("your Grade is A+");
     }
-    else if(totals==80-89){
-        printf("your Grade is A",totals);
+    else if(total>=80){
+        printf("your Grade is A");
     }
-     else if(totals==70-79){
-        printf("your Grade is B+",totals);
+     else if(total>=70){
+        printf("your Grade is B+");
     }
-     else if(totals==60-69){
-        printf("your Grade is B",totals);
+     else if(total>=60){
+        printf("your Grade is B");
     }
-     else if(totals==50-59){
-        printf("your Grade is B",totals);
+     else if(total>=50){
+        printf("your Grade is c");
     }
-    
+     
     return 0;
 }

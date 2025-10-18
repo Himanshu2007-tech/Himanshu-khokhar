@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+     int x,sum=0,count=0, i, j;
+    scanf("%d",&x);
+    int list[x];
+    for(i=0; i<x; i++){
+        scanf("%d",&list[i]);
+    }
+    for(j=0; j<x; j++){
+        if(list[j] % 2 == 0){
+            count = count+1;
+        }
+    }
+    for(int t=0; t<x; t++){
+        if(list[t] % 2 == 1){
+            sum = sum+1;
+        }
+    }
+        printf("%d %d",count,sum);
+    return 0;
+}

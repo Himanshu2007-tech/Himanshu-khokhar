@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() { 
+    int R,C,i;
+    printf("Enter Row Size");
+    scanf("%d",&R);
+    printf("Enter Column Size");
+    scanf("%d",&C);
+    int list[R][C];
+    for(i=0; i<R;i++){
+        for(int p=0; p<C; p++){
+    printf("Insert Value");
+        scanf("%d",&list[i][p]);
+    }
+    }
+    for(int j=0; j<R; j++){
+        for(int l=0; l<C; l++){
+            printf("%d ",list[j][l]);
+        }
+    printf("\n");
+    }
+    return 0;
+}
